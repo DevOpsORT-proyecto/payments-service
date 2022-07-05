@@ -7,6 +7,6 @@ jobs:
   Java-Workflow:
     uses: DevOpsORT-proyecto/obligatorioDevOps-infra/.github/workflows/Java-Workflow.yml@main
     with:
-      service-name: Orders
+      service-name: Payments
       sonar-project-key: DevOpsORT-proyecto_payments-service
     secrets: inherit
