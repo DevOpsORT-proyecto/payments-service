@@ -11,5 +11,5 @@ RUN mvn -f /home/app/pom.xml clean package
 #
 FROM openjdk:11-jre-slim
 COPY --from=build /home/app/target/payments-service-example-0.0.1-SNAPSHOT.jar /usr/local/lib/payments-service-example.jar
-EXPOSE 5001
+EXPOSE 8080
 CMD java -jar /usr/local/lib/payments-service-example.jar
