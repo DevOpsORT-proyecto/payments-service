@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PaymentsServiceExampleApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Payments Url: " + args[0]);
 		SpringApplication.run(PaymentsServiceExampleApplication.class, args);
 	}
 
