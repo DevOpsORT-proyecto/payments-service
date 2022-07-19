@@ -19,4 +19,15 @@ public class PaymentsLogic {
 
         return options[randomOption];
     }
+
+    public PaymentStatus pay(String orderId,Boolean status) {
+        PaymentStatus[] options = {new PaymentStatus(orderId, true, "Done."), new PaymentStatus(orderId, false, "No money.")};
+        int randomOption = 1;
+        if(status) randomOption = 0;
+
+        logger.info("Paying result: " + options[randomOption].toString());
+
+        return options[randomOption];
+    }
+
 }
